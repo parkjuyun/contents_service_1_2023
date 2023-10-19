@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css practice_r.css" type="text/css". rel="stylesheet">
+<meta charset="utf-8">
+<title>주윤쇼핑몰(mocking coupang)</title>
+<script>
+	function randomInt(){
+		return Math.floor(Math.random()*9)+1;
+	}
+</script>
+<script>
+let win=null;
+function showHTML(){
+	if (win == null || win.close) {// window가 clear하면 윈도우...
+		win = window.open("", "outWin", "width=300, height=200");
+	}
+	let textArea = document.getElementByld("srcText");
+	win.document.open();
+	win.document.write(textArea.value);
+	// win.document.close();
+	}
+</script>
+</head>
+<style>
+	html, body { margin: 0; padding: 0; height: 100%; }
+	header {width: 100%; height: 15%; background: white;}
+	nav {width: 15%; height: 70%; float: left;  background: white; }
+	section { width: 70%; height: 70%; float: left; }
+	/* @import url(css practice_r.css); */
+</style>
+<body>
+<h3>사이트 의의</h3>
+<hr>
+<dl>
+<dt><strong>주윤 쇼핑몰(제가팔고싶은거팝니다) 판매자 소개</dt>
+<dd>판매업에서 가장 중요한 것은 무엇일까요? 상품의 품질, 디자인?<br>
+모두 중요하지만, 믿을 수 있을만한 판매자 정보도 중요하다고 생각합니다!</dd><br>
+<div style="background-color:pink; padding:20px;">
+	<img src="https://img1.daumcdn.net/thumb/R1024x0/?fname=https://t1.daumcdn.net/cafeattach/mEr9/4270464b99e3a42922bdce38c4bf620f5d4b818c"
+	alt="얼굴천재 카리나 되고 싶다" width="500" height="700"><br>
+	<h2>박주윤, 게임학과 꽤 오래다니는 중...</h2>
+	<hr>
+	<span style="color:red">카리나 얼굴 짱 좋다!</span>
+	<h3>판매자가 좋아하는 것들</h3>
+	<ul><pre>
+		<li>인생 영화 정보 공유
+			<ol type ="A">
+				<li>어바웃타임 / About time(2013)>
+				<li>블레이드러너 2049 / Bladerunner 2049 (2017)
+				<li>고레에다 히로카즈 작품들
+					<ul>
+						<li>진짜로 일어날지도 몰라 기적(2011)
+						<li>바닷마을 다이어리(2015)
+						<li>그렇게 아버지가 된다(2013)
+						<li>아무도 모른다(2004)
+						<li>어느 가족(2018)
+			</ol>
+		<li>맛집정보
+		<li>예쁜 소품 ♡ 옷 정보
+		<li>예쁜 얼굴(연예인) 구경하기
+		<li>밈/귀여운 짤 보기
+	</ul>
+</pre>
+
+<h4> 소품 소개, 표 활용하기</h4>
+<table border="0.2">
+<caption>취미 예시 소개</caption>
+<tbody>
+	<tr>
+	<td><img src="media/star.jpeg" width="200" height="200"></td>
+	<td><img src="media/bluecloth.jpeg" width="200" height="200"></td>
+	<td><img src="media/doggy.jpeg" width="200" height="200"></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>앞으로 일주일의 날씨들</h3>
+<script>
+	let degrees = new Array();
+	degrees[0] = 19;
+	degrees[1] = 23;
+	degrees[2] = 21;
+	degrees[3] = 19;
+	degrees[4] = 18;
+	degrees[5] = 17;
+	degrees[6] = 16;
+	
+	let sum =0;
+	for(let i=0; i<degrees.length; i++)
+		sum += degrees[i];
+
+	document.write ("평균 온도는 " + sum/degrees.length + "<br>");
+
+	document.write ("오늘 온도는 " + degrees[0] + "<br>");
+	document.write ("내일 온도는 " + degrees[1] + "<br>");
+	document.write ("모레 온도는 " + degrees[2] + "<br>");
+	document.write ("글피 온도는 " + degrees[3] + "<br>");
+	document.write ("5일뒤 온도는 " + degrees[4] + "<br>");
+	document.write ("육일 뒤 온도는 " + degrees[5] + "<br>");
+	document.write ("일주일 뒤 온도는 " + degrees[6] + "<br>");
+
+</script>
+
+<hr>
+<h3>구구단 문제 풀기</h3>
+<a href="math practice.html" target="_blank" rel="noopener noreferrer">
+	<input type="submit" value="이동하기">
+</a>
+<hr>
+<h3>HTML 문서 작성기 만들기</h3>
+<!-- <html> -->
+<!-- <head><title>test text></title></head> -->
+<!-- <body> -->
+<!-- <h2>hello</h2> -->
+<!-- <hr> -->
+<!-- success to create html file!<br> -->
+<!-- Yeah! -->
+<!-- </body> -->
+<!-- </html> -->
+<p>아래에 html 문서를 작성하고 버튼을 클릭해 보세요. 새 윈도우에 html 문서가 출력됩니다.</p>
+<textArea id="srcText" rows="10" cols="50"></textArea>
+<br>
+<br>
+<button onclick="showHTML()">HTML문서 출력하기</button>
+<hr>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wX8vpzU_i_c?si=n6MEXRcr9bEDce31" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<hr>
+<h1>"JOIN US!"</h1>
+<a href="joinus.html">
+	<input type="submit" value="가입하기">
+</a>
+<hr>
+
+<h1>로그인을 위헤 회원정보를 입력해주세요.:)</h1> 
+<form name="fo" method="get">
+	<fieldset>
+	<legend>회원정보</legend>
+<label>user  ID: <input type="text" size="15" value="">
+</label><br>
+<label for="pass">password : </label>
+	<input id="pass" type="password" size="15" value="">
+		<input type="submit" value="login">
+	</fieldset>
+	<small>질문: tel. 010.2708.0255</small>
+</form>
+<hr>
+	<h3> 찾아오시는 길 </h3>
+		<h5> 위치 : 서울특별시 종로구 홍지문2길 20 융합공학관 4층 402호</h5>
+		<iframe id="ifram_map"
+			title="ifram_ex1"
+			style="border:none;" 
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.0091870723963!2d126.9542915!3d37.601942799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca302a77956fb%3A0xe9093fe749e6547b!2z7IOB66qF64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1695281047473!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+		</iframe>
+<hr>
+
+</body>
+</html>
