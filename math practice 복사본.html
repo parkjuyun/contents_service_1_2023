@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+<script>
+	function randomInt() {
+		return Math.floor(Math.random()*9) +1;
+	}
+</script>
+</head>
+<body>
+<h3>using math function : multiply</h3>
+<hr>
+<script>
+	let ques = randomInt() + "*" + randomInt();
+	let user = prompt(ques + "what is the answer?", 0);
+	if (user == null) {
+		document.write ("done with multiply practice.");
+	}
+	else {
+		let ans = eval(ques);
+		if (ans == user)
+			document.write ("correct! ");
+		else
+			document.write ("Wrong answer! ");
+		document.write(ques + " = " + "<strong>" + ans +"</strong>입니다<br>");
+	}
+</script>
+<a href="math practice.html" target="_blank" rel="noopener noreferrer">
+	<input type="submit" value="다시하기">
+</a>
+</body>
+</html>
