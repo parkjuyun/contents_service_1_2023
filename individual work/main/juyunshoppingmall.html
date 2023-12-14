@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./juyunshoppingmall.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	p{font-size: : 14px; color: white;}
+</style>
+<title>juyun shopping mall</title>
+<script src="./juyunshoppingmall.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">
+			<a style="font-family:'OKGUNG';" href="./juyunshoppingmall.html">YOONBEAM</a>
+
+			<div class="icons" style="width: 80%; display: flex; justify-content:flex-end; align-items:center">
+    		<a style="font-family:'JSONGMYUNG';padding-right:10px;" href="../page/joinus.html">가입</a>
+    		<a style="font-family: 'JSONGMYUNG';padding-right:10px;" href="../page/login.html">로그인</a>
+    		</div>
+
+    	<i class="fa fa-bars" style="color : white; font-size: 24px; z-index:5; padding-right:40px"></i>
+   		</div>
+
+    <div class="menu hidden">
+    	<ul>
+    		<h1 style="text-align: center;">YOONBEAM</h1>
+    		<hr>
+    		<li>
+    			<a style="font-family:'KOTRA';" href="./juyunshoppingmall.html">메인페이지</a></li>
+    		<li>
+    			<a style="font-family:'KOTRA';" href="../page/introduce.html">소개</a></li>
+    		<hr>
+    		<li>
+    			<a style="font-family:'KOTRA';" href="../page/stuff.html">Stuff</a></li>
+    		<li>
+    			<a style="font-family:'KOTRA';" href="../page/movie.html">Movie</a></li>
+    		<li>
+    			<a style="font-family:'KOTRA';" href="../page/extra.html">Extra</a></li>
+    		</ul>
+    	</div>
+
+		<title>YOONBEAM</title>
+
+		<h1>"JOIN US!"</h1>
+			<a href="joinus.html">
+				<input type="submit" value="가입하기">
+			</a>
+	</header>
+
+	<section>
+		<article>
+			<hr>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/wX8vpzU_i_c?si=n6MEXRcr9bEDce31" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			<hr>
+			
+		</article>
+	</section>
+
+	<footer>
+			<h3> 찾아오시는 길 </h3>
+		<h5> 위치 : 서울특별시 종로구 홍지문2길 20 융합공학관 4층 402호</h5>
+		<iframe id="ifram_map"
+			title="ifram_ex1"
+			style="border:none;" 
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.0091870723963!2d126.9542915!3d37.601942799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca302a77956fb%3A0xe9093fe749e6547b!2z7IOB66qF64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1695281047473!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+		</iframe><hr>
+			<small> 문의 : tel. 010.2708.0255</small>
+	</footer>
+</body>
+	<script>
+
+		const menu_bar = document.querySelector('.fa-bars');
+		const menu = document.querySelector('.menu');
+		function showMenu(){
+			menu.classList.remove("hidden");
+		}
+		function closeMenu()
+		{
+			menu.classList.add("hidden");
+		}
+
+		menu_bar.addEventListener('click',()=>{
+			if(menu.classList.contains('hidden'))
+			{
+				showMenu();
+			}
+			else{
+				closeMenu();
+			}
+		})
+
+		const searchIcon = document.querySelector('.fa-search');
+		const searchInput = document.querySelector('search');
+
+	</script>
+</html>
